@@ -27,12 +27,12 @@ int main(int argc, char *argv[])
         loopPool = [[NSAutoreleasePool alloc] init];
         int idletime = CGEventSourceSecondsSinceLastEventType(1,NX_KEYDOWN | NX_LMOUSEDOWN | NX_LMOUSEUP | NX_RMOUSEDOWN | NX_RMOUSEUP | NX_MOUSEMOVED | NX_LMOUSEDRAGGED | NX_RMOUSEDRAGGED | NX_KEYUP | NX_FLAGSCHANGED | NX_SCROLLWHEELMOVED);
         if (idletime < 60) {
-            NSDateFormatter *format1 = [[NSDateFormatter alloc] init];
-            NSDateFormatter *format2 = [[NSDateFormatter alloc] init];
+            NSDateFormatter *format1 = [[[NSDateFormatter alloc] init] autorelease];
+            NSDateFormatter *format2 = [[[NSDateFormatter alloc] init] autorelease];
             [format1 setDateFormat:@"yyyyMMdd/yyyyMMdd-HHmmss"];
             [format2 setDateFormat:@"yyyyMMdd"];
             
-            NSDate *now = [[NSDate alloc] init];
+            NSDate *now = [[[NSDate alloc] init] autorelease];
             
             NSString *fileNameString = [format1 stringFromDate:now];
             NSString *folderNameString = [format2 stringFromDate:now];
