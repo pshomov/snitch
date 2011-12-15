@@ -1,0 +1,239 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D23683B4149981A800884247 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23683B3149981A800884247 /* Foundation.framework */; };
+		D23683B7149981A800884247 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D23683B6149981A800884247 /* main.m */; };
+		D23683BB149981A800884247 /* Snitch.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D23683BA149981A800884247 /* Snitch.1 */; };
+		D23683C2149981D200884247 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23683C1149981D200884247 /* Cocoa.framework */; };
+		D23683C4149981DF00884247 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23683C3149981DF00884247 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D23683AD149981A800884247 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				D23683BB149981A800884247 /* Snitch.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D23683AF149981A800884247 /* Snitch */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Snitch; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23683B3149981A800884247 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D23683B6149981A800884247 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D23683B9149981A800884247 /* Snitch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Snitch-Prefix.pch"; sourceTree = "<group>"; };
+		D23683BA149981A800884247 /* Snitch.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Snitch.1; sourceTree = "<group>"; };
+		D23683C1149981D200884247 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D23683C3149981DF00884247 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D23683AC149981A800884247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23683C4149981DF00884247 /* QuartzCore.framework in Frameworks */,
+				D23683C2149981D200884247 /* Cocoa.framework in Frameworks */,
+				D23683B4149981A800884247 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D23683A4149981A700884247 = {
+			isa = PBXGroup;
+			children = (
+				D23683B5149981A800884247 /* Snitch */,
+				D23683B2149981A800884247 /* Frameworks */,
+				D23683B0149981A800884247 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D23683B0149981A800884247 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D23683AF149981A800884247 /* Snitch */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D23683B2149981A800884247 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D23683C3149981DF00884247 /* QuartzCore.framework */,
+				D23683C1149981D200884247 /* Cocoa.framework */,
+				D23683B3149981A800884247 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D23683B5149981A800884247 /* Snitch */ = {
+			isa = PBXGroup;
+			children = (
+				D23683B6149981A800884247 /* main.m */,
+				D23683BA149981A800884247 /* Snitch.1 */,
+				D23683B8149981A800884247 /* Supporting Files */,
+			);
+			path = Snitch;
+			sourceTree = "<group>";
+		};
+		D23683B8149981A800884247 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D23683B9149981A800884247 /* Snitch-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D23683AE149981A800884247 /* Snitch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D23683BE149981A800884247 /* Build configuration list for PBXNativeTarget "Snitch" */;
+			buildPhases = (
+				D23683AB149981A800884247 /* Sources */,
+				D23683AC149981A800884247 /* Frameworks */,
+				D23683AD149981A800884247 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Snitch;
+			productName = Snitch;
+			productReference = D23683AF149981A800884247 /* Snitch */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D23683A6149981A700884247 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = D23683A9149981A700884247 /* Build configuration list for PBXProject "Snitch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D23683A4149981A700884247;
+			productRefGroup = D23683B0149981A800884247 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D23683AE149981A800884247 /* Snitch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D23683AB149981A800884247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23683B7149981A800884247 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D23683BC149981A800884247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D23683BD149981A800884247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D23683BF149981A800884247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Snitch/Snitch-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D23683C0149981A800884247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Snitch/Snitch-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D23683A9149981A700884247 /* Build configuration list for PBXProject "Snitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D23683BC149981A800884247 /* Debug */,
+				D23683BD149981A800884247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D23683BE149981A800884247 /* Build configuration list for PBXNativeTarget "Snitch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D23683BF149981A800884247 /* Debug */,
+				D23683C0149981A800884247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D23683A6149981A700884247 /* Project object */;
+}
