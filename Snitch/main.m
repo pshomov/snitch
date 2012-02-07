@@ -22,6 +22,12 @@ void SaveDesktop(NSString *filename) {
 
 int main(int argc, char *argv[])
 {
+    NSUserDefaults *standardDefaults = [NSUserDefaults standardUserDefaults];
+    
+    NSInteger anInteger = [standardDefaults integerForKey:@"intervalSeconds"];
+    if (anInteger == 0) anInteger = 60;
+    
+    NSLog (@"Snapshoting every %d seconds", anInteger);    
     while(TRUE) {
         NSAutoreleasePool *loopPool;
         loopPool = [[NSAutoreleasePool alloc] init];
@@ -43,7 +49,7 @@ int main(int argc, char *argv[])
             SaveDesktop([fileNameString stringByAppendingString:@".jpg"]);
             [loopPool drain];
             
-            sleep(15);
+            sleep(anInteger);
         }
         
     }
